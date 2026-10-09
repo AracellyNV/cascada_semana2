@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Analytics Pro</title>
+    <title>Panel básico</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -14,291 +14,55 @@
   </head>
   <body>
     <div class="dashboard-shell">
-      <aside class="sidebar-blue">
-        <div class="sidebar-brand">
-          <div class="brand-mark"><i class="fa-solid fa-chart-simple"></i></div>
-          <span>AnalyticsPro</span>
-        </div>
-
-        <nav class="sidebar-nav" aria-label="Navegación principal">
-          <button class="nav-item is-active" data-title="Resumen" data-view="view-resumen" type="button">
-            <i class="fa-solid fa-house"></i>
-            <span>Resumen</span>
-          </button>
-          <button class="nav-item" data-title="Usuarios" data-view="view-usuarios" type="button">
-            <i class="fa-solid fa-users"></i>
-            <span>Usuarios</span>
-          </button>
-          <button class="nav-item" data-title="Proyectos" data-view="view-proyectos" type="button">
-            <i class="fa-solid fa-folder-open"></i>
-            <span>Proyectos</span>
-          </button>
-          <button class="nav-item" data-title="Ventas" data-view="view-ventas" type="button">
-            <i class="fa-solid fa-cart-shopping"></i>
-            <span>Ventas</span>
-          </button>
-          <button class="nav-item" data-title="Reportes" data-view="view-reportes" type="button">
-            <i class="fa-solid fa-file-lines"></i>
-            <span>Reportes</span>
-          </button>
-          <button class="nav-item" data-title="Configuración" data-view="view-configuracion" type="button">
-            <i class="fa-solid fa-gear"></i>
-            <span>Configuración</span>
-          </button>
-          <button class="nav-item" data-title="Ayuda" data-view="view-ayuda" type="button">
-            <i class="fa-solid fa-circle-question"></i>
-            <span>Ayuda</span>
-          </button>
-        </nav>
-
-        <button class="profile-box" type="button">
-          <div class="profile-pic"><i class="fa-solid fa-user"></i></div>
-          <div class="profile-text">
-            <strong>usuario</strong>
-            <small>Administrador</small>
-          </div>
-        </button>
-      </aside>
-
       <main class="content-area">
         <header class="topbar-panel">
           <div class="title-group">
             <div class="title-logo"><i class="fa-solid fa-chart-simple"></i></div>
-            <h2 id="page-title">Resumen</h2>
+            <h2>Panel básico</h2>
           </div>
-
-          <div class="topbar-tools">
-            <div class="search-box">
-              <input type="text" value="Buscar..." />
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-            <div class="bell-box">
-              <i class="fa-solid fa-bell"></i>
-              <span class="mini-badge">3</span>
-            </div>
-            <div class="avatar-box">DR</div>
-          </div>
+          <span class="sales-count">Mi negocio · Resumen general</span>
         </header>
 
-        <div id="view-resumen" class="view-panel">
-          <div class="stats-row">
-            <div class="stat-card">
-              <div class="stat-icon users"><i class="fa-solid fa-user-group"></i></div>
-              <div class="stat-copy">
-                <span class="label">Usuarios Activos</span>
-                <strong>12,458</strong>
-                <small>↑ 12.5% vs. ayer</small>
-              </div>
-            </div>
-
-            <div class="stat-card">
-              <div class="stat-icon sessions"><i class="fa-solid fa-chart-column"></i></div>
-              <div class="stat-copy">
-                <span class="label">Sesiones</span>
-                <strong>34,892</strong>
-                <small>↑ 8.2% vs. ayer</small>
-              </div>
-            </div>
-
-            <div class="stat-card">
-              <div class="stat-icon conversion"><i class="fa-solid fa-arrow-trend-up"></i></div>
-              <div class="stat-copy">
-                <span class="label">Conversiones</span>
-                <strong>2,951</strong>
-                <small>↑ 15.7% vs. ayer</small>
-              </div>
-            </div>
-
-            <div class="stat-card">
-              <div class="stat-icon money"><i class="fa-solid fa-dollar-sign"></i></div>
-              <div class="stat-copy">
-                <span class="label">Ingresos</span>
-                <strong>$45,231</strong>
-                <small>↑ 9.8% vs. ayer</small>
-              </div>
-            </div>
-          </div>
-
-          <div class="middle-row">
-            <div class="chart-card panel-card">
-              <div class="head-line">
-                <h3>Resumen de actividad</h3>
-                <div class="legend">
-                  <span><i class="fa-solid fa-circle" style="color:#8b5cf6"></i> Sesiones</span>
-                  <span><i class="fa-solid fa-circle" style="color:#3d8bff"></i> Usuarios</span>
-                </div>
-              </div>
-
-              <div class="chart-area">
-                <div class="chart-grid"></div>
-                <svg viewBox="0 0 520 220" preserveAspectRatio="none">
-                  <path d="M0,150 C60,120 80,170 130,110 C170,60 220,120 270,95 C330,60 380,150 440,100 C470,80 500,90 520,96" />
-                  <path d="M0,120 C60,140 75,80 130,95 C180,110 220,170 270,135 C330,90 370,150 440,110 C470,130 500,100 520,105" />
-                </svg>
-                <div class="chart-labels">
-                  <span>Lun</span>
-                  <span>Mar</span>
-                  <span>Mié</span>
-                  <span>Jue</span>
-                  <span>Vie</span>
-                  <span>Sáb</span>
-                  <span>Dom</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="projects-card panel-card">
-              <div class="head-line">
-                <h3>Top proyectos</h3>
-                <a href="#">Ver todos</a>
-              </div>
-
-              <div class="project-line">
-                <span>Plataforma Web 2.0</span>
-                <strong>25%</strong>
-              </div>
-              <div class="progress-bar"><span style="width:25%"></span></div>
-
-              <div class="project-line">
-                <span>App Móvil</span>
-                <strong>18%</strong>
-              </div>
-              <div class="progress-bar"><span style="width:18%"></span></div>
-
-              <div class="project-line">
-                <span>Campaña Q2</span>
-                <strong>15%</strong>
-              </div>
-              <div class="progress-bar"><span style="width:15%"></span></div>
-
-              <div class="project-line">
-                <span>Rediseño Dashboard</span>
-                <strong>12%</strong>
-              </div>
-              <div class="progress-bar"><span style="width:12%"></span></div>
-
-              <div class="project-line">
-                <span>Integración API</span>
-                <strong>8%</strong>
-              </div>
-              <div class="progress-bar"><span style="width:8%"></span></div>
-            </div>
-          </div>
-
-          <div class="bottom-row">
-            <div class="recent-card panel-card">
-              <div class="head-line">
-                <h3>Proyectos recientes</h3>
-                <a href="#">Ver todos</a>
-              </div>
-
-              <div class="mini-projects">
-                <div class="mini-card purple">
-                  <div class="mini-visual">
-                    <img src="imagenes/proyecto-1.jpg" alt="Plataforma Web 2.0" />
-                  </div>
-                  <strong>Plataforma Web 2.0</strong>
-                  <span class="pill active">Activo</span>
-                </div>
-
-                <div class="mini-card blue">
-                  <div class="mini-visual">
-                    <img src="imagenes/proyecto-2.jpg" alt="App Móvil" />
-                  </div>
-                  <strong>App Móvil</strong>
-                  <span class="pill active">Activo</span>
-                </div>
-
-                <div class="mini-card beige">
-                  <div class="mini-visual">
-                    <img src="imagenes/proyecto-3.jpg" alt="Campaña Q2" />
-                  </div>
-                  <strong>Campaña Q2</strong>
-                  <span class="pill paused">Pausado</span>
-                </div>
-
-                <div class="mini-card violet-dark">
-                  <div class="mini-visual">
-                    <img src="imagenes/proyecto-4.jpg" alt="Rediseño Dashboard" />
-                  </div>
-                  <strong>Rediseño Dashboard</strong>
-                  <span class="pill active">Activo</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="activity-card panel-card">
-              <div class="head-line">
-                <h3>Actividad reciente</h3>
-                <a href="#">Necesitas ayuda?</a>
-              </div>
-
-              <div class="activity-list">
-                <div class="row-item"><span>Usuario</span><span>Acción</span><span>Proyecto</span><span>Fecha</span></div>
-                <div class="row-item"><span>Ana Torres</span><span>Creó un reporte</span><span>Plataforma Web 2.0</span><span>Hoy, 10:45</span></div>
-                <div class="row-item"><span>Juan Pérez</span><span>Actualizó proyecto</span><span>App Móvil</span><span>Hoy, 09:32</span></div>
-                <div class="row-item"><span>María López</span><span>Eliminó usuario</span><span>Integración API</span><span>Ayer, 18:21</span></div>
-                <div class="row-item"><span>Carlos Ruiz</span><span>Reportó datos</span><span>Campaña Q2</span><span>Ayer, 16:05</span></div>
-              </div>
-            </div>
-
-            <div class="help-card panel-card">
-              <div class="help-ico"><i class="fa-solid fa-headphones"></i></div>
-              <h4>¿Necesitas ayuda?</h4>
-              <p>Nuestro equipo está listo para ayudarte.</p>
-              <button>Contactar soporte</button>
-            </div>
-          </div>
-        </div>
-
-        <section id="view-ventas" class="view-panel sales-view" hidden aria-label="Resumen de ventas">
+        <section class="sales-view" aria-label="Resumen del negocio">
           <div class="sales-heading">
             <div>
-              <h3>Resumen de ventas</h3>
-              <p>Consulta el rendimiento y las transacciones recientes.</p>
+              <h3>¡Bienvenido!</h3>
+              <p>Aquí tienes un resumen sencillo de la actividad de tu negocio.</p>
             </div>
-            <span class="sales-period"><i class="fa-regular fa-calendar"></i> Este mes</span>
+            <span class="sales-period"><i class="fa-regular fa-calendar"></i> Octubre 2026</span>
           </div>
 
-          <div class="sales-stats">
+          <div class="stats-row">
             <article class="stat-card">
-              <div class="stat-icon money"><i class="fa-solid fa-dollar-sign"></i></div>
+              <div class="stat-icon users"><i class="fa-solid fa-box"></i></div>
               <div class="stat-copy">
-                <span class="label">Ingresos totales</span>
-                <strong>$45,231</strong>
-                <small>↑ 9.8% vs. mes anterior</small>
+                <span class="label">Productos</span>
+                <strong>24</strong>
+                <small>En catálogo</small>
               </div>
             </article>
             <article class="stat-card">
               <div class="stat-icon sessions"><i class="fa-solid fa-bag-shopping"></i></div>
               <div class="stat-copy">
-                <span class="label">Ventas realizadas</span>
-                <strong>1,284</strong>
-                <small>↑ 6.4% vs. mes anterior</small>
+                <span class="label">Pedidos</span>
+                <strong>18</strong>
+                <small>Este mes</small>
               </div>
             </article>
             <article class="stat-card">
-              <div class="stat-icon conversion"><i class="fa-solid fa-receipt"></i></div>
+              <div class="stat-icon conversion"><i class="fa-solid fa-users"></i></div>
               <div class="stat-copy">
-                <span class="label">Ticket promedio</span>
-                <strong>$35.23</strong>
-                <small>↑ 3.1% vs. mes anterior</small>
-              </div>
-            </article>
-            <article class="stat-card">
-              <div class="stat-icon users"><i class="fa-solid fa-percent"></i></div>
-              <div class="stat-copy">
-                <span class="label">Tasa de conversión</span>
-                <strong>4.8%</strong>
-                <small>↑ 0.6% vs. mes anterior</small>
+                <span class="label">Clientes</span>
+                <strong>12</strong>
+                <small>Registrados</small>
               </div>
             </article>
           </div>
 
           <div class="sales-table-card panel-card">
             <div class="head-line">
-              <h3>Ventas recientes</h3>
-              <span class="sales-count">Últimas transacciones</span>
+              <h3>Pedidos recientes</h3>
+              <span class="sales-count">Últimos pedidos</span>
             </div>
             <div class="sales-table-wrap">
               <table class="sales-table">
@@ -306,85 +70,35 @@
                   <tr>
                     <th scope="col">Pedido</th>
                     <th scope="col">Cliente</th>
-                    <th scope="col">Fecha</th>
                     <th scope="col">Estado</th>
                     <th scope="col">Total</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>#V-1048</td>
+                    <td>#0018</td>
                     <td>Ana Torres</td>
-                    <td>Hoy, 10:45</td>
-                    <td><span class="sale-status completed">Completada</span></td>
-                    <td>$128.00</td>
+                    <td><span class="sale-status completed">Entregado</span></td>
+                    <td>$48.00</td>
                   </tr>
                   <tr>
-                    <td>#V-1047</td>
+                    <td>#0017</td>
                     <td>Juan Pérez</td>
-                    <td>Hoy, 09:32</td>
-                    <td><span class="sale-status pending">Pendiente</span></td>
-                    <td>$76.50</td>
+                    <td><span class="sale-status pending">En camino</span></td>
+                    <td>$32.50</td>
                   </tr>
                   <tr>
-                    <td>#V-1046</td>
+                    <td>#0016</td>
                     <td>María López</td>
-                    <td>Ayer, 18:21</td>
-                    <td><span class="sale-status completed">Completada</span></td>
-                    <td>$245.00</td>
-                  </tr>
-                  <tr>
-                    <td>#V-1045</td>
-                    <td>Carlos Ruiz</td>
-                    <td>Ayer, 16:05</td>
-                    <td><span class="sale-status cancelled">Cancelada</span></td>
-                    <td>$39.90</td>
-                  </tr>
-                  <tr>
-                    <td>#V-1044</td>
-                    <td>Lucía Gómez</td>
-                    <td>08 oct, 14:18</td>
-                    <td><span class="sale-status completed">Completada</span></td>
-                    <td>$92.00</td>
+                    <td><span class="sale-status completed">Entregado</span></td>
+                    <td>$75.00</td>
                   </tr>
                 </tbody>
               </table>
             </div>
           </div>
         </section>
-
-        <div id="view-usuarios" class="view-panel empty-view" hidden></div>
-        <div id="view-proyectos" class="view-panel empty-view" hidden></div>
-        <div id="view-reportes" class="view-panel empty-view" hidden></div>
-        <div id="view-configuracion" class="view-panel empty-view" hidden></div>
-        <div id="view-ayuda" class="view-panel empty-view" hidden></div>
       </main>
     </div>
-
-    <script>
-      const navButtons = document.querySelectorAll('.nav-item');
-      const pageTitle = document.getElementById('page-title');
-      const views = document.querySelectorAll('.view-panel');
-
-      function showView(targetId) {
-        views.forEach((view) => {
-          view.hidden = view.id !== targetId;
-        });
-      }
-
-      navButtons.forEach((button) => {
-        button.addEventListener('click', () => {
-          navButtons.forEach((item) => item.classList.remove('is-active'));
-          button.classList.add('is-active');
-
-          const title = button.dataset.title || 'Resumen';
-          const target = button.dataset.view || 'view-resumen';
-          pageTitle.textContent = title;
-          showView(target);
-        });
-      });
-
-      showView('view-resumen');
-    </script>
   </body>
 </html>
