@@ -33,6 +33,10 @@
             <i class="fa-solid fa-folder-open"></i>
             <span>Proyectos</span>
           </button>
+          <button class="nav-item" data-title="Ventas" data-view="view-ventas" type="button">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span>Ventas</span>
+          </button>
           <button class="nav-item" data-title="Reportes" data-view="view-reportes" type="button">
             <i class="fa-solid fa-file-lines"></i>
             <span>Reportes</span>
@@ -246,6 +250,108 @@
             </div>
           </div>
         </div>
+
+        <section id="view-ventas" class="view-panel sales-view" hidden aria-label="Resumen de ventas">
+          <div class="sales-heading">
+            <div>
+              <h3>Resumen de ventas</h3>
+              <p>Consulta el rendimiento y las transacciones recientes.</p>
+            </div>
+            <span class="sales-period"><i class="fa-regular fa-calendar"></i> Este mes</span>
+          </div>
+
+          <div class="sales-stats">
+            <article class="stat-card">
+              <div class="stat-icon money"><i class="fa-solid fa-dollar-sign"></i></div>
+              <div class="stat-copy">
+                <span class="label">Ingresos totales</span>
+                <strong>$45,231</strong>
+                <small>↑ 9.8% vs. mes anterior</small>
+              </div>
+            </article>
+            <article class="stat-card">
+              <div class="stat-icon sessions"><i class="fa-solid fa-bag-shopping"></i></div>
+              <div class="stat-copy">
+                <span class="label">Ventas realizadas</span>
+                <strong>1,284</strong>
+                <small>↑ 6.4% vs. mes anterior</small>
+              </div>
+            </article>
+            <article class="stat-card">
+              <div class="stat-icon conversion"><i class="fa-solid fa-receipt"></i></div>
+              <div class="stat-copy">
+                <span class="label">Ticket promedio</span>
+                <strong>$35.23</strong>
+                <small>↑ 3.1% vs. mes anterior</small>
+              </div>
+            </article>
+            <article class="stat-card">
+              <div class="stat-icon users"><i class="fa-solid fa-percent"></i></div>
+              <div class="stat-copy">
+                <span class="label">Tasa de conversión</span>
+                <strong>4.8%</strong>
+                <small>↑ 0.6% vs. mes anterior</small>
+              </div>
+            </article>
+          </div>
+
+          <div class="sales-table-card panel-card">
+            <div class="head-line">
+              <h3>Ventas recientes</h3>
+              <span class="sales-count">Últimas transacciones</span>
+            </div>
+            <div class="sales-table-wrap">
+              <table class="sales-table">
+                <thead>
+                  <tr>
+                    <th scope="col">Pedido</th>
+                    <th scope="col">Cliente</th>
+                    <th scope="col">Fecha</th>
+                    <th scope="col">Estado</th>
+                    <th scope="col">Total</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>#V-1048</td>
+                    <td>Ana Torres</td>
+                    <td>Hoy, 10:45</td>
+                    <td><span class="sale-status completed">Completada</span></td>
+                    <td>$128.00</td>
+                  </tr>
+                  <tr>
+                    <td>#V-1047</td>
+                    <td>Juan Pérez</td>
+                    <td>Hoy, 09:32</td>
+                    <td><span class="sale-status pending">Pendiente</span></td>
+                    <td>$76.50</td>
+                  </tr>
+                  <tr>
+                    <td>#V-1046</td>
+                    <td>María López</td>
+                    <td>Ayer, 18:21</td>
+                    <td><span class="sale-status completed">Completada</span></td>
+                    <td>$245.00</td>
+                  </tr>
+                  <tr>
+                    <td>#V-1045</td>
+                    <td>Carlos Ruiz</td>
+                    <td>Ayer, 16:05</td>
+                    <td><span class="sale-status cancelled">Cancelada</span></td>
+                    <td>$39.90</td>
+                  </tr>
+                  <tr>
+                    <td>#V-1044</td>
+                    <td>Lucía Gómez</td>
+                    <td>08 oct, 14:18</td>
+                    <td><span class="sale-status completed">Completada</span></td>
+                    <td>$92.00</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
 
         <div id="view-usuarios" class="view-panel empty-view" hidden></div>
         <div id="view-proyectos" class="view-panel empty-view" hidden></div>

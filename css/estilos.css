@@ -337,6 +337,112 @@ input {
   font-size: 0.7rem;
 }
 
+.sales-view {
+  padding: 20px 16px;
+}
+
+.sales-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin: 0 0 16px;
+}
+
+.sales-heading h3 {
+  margin: 0;
+  color: #1c2e4d;
+  font-size: 1.1rem;
+}
+
+.sales-heading p {
+  margin: 6px 0 0;
+  color: #7586a3;
+  font-size: 0.82rem;
+}
+
+.sales-period {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 12px;
+  color: #526582;
+  background: #ffffff;
+  border: 1px solid #e7ecf7;
+  border-radius: 10px;
+  font-size: 0.8rem;
+}
+
+.sales-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.sales-table-card {
+  min-width: 0;
+}
+
+.sales-count {
+  color: #7586a3;
+  font-size: 0.76rem;
+}
+
+.sales-table-wrap {
+  overflow-x: auto;
+}
+
+.sales-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #526582;
+  font-size: 0.82rem;
+  text-align: left;
+}
+
+.sales-table th,
+.sales-table td {
+  padding: 13px 12px;
+  border-bottom: 1px solid #eef2f9;
+  white-space: nowrap;
+}
+
+.sales-table th {
+  color: #7586a3;
+  font-size: 0.74rem;
+  font-weight: 600;
+}
+
+.sales-table td:first-child,
+.sales-table td:last-child {
+  color: #273d61;
+  font-weight: 700;
+}
+
+.sale-status {
+  display: inline-flex;
+  padding: 5px 9px;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.sale-status.completed {
+  background: rgba(43, 189, 122, 0.12);
+  color: #168858;
+}
+
+.sale-status.pending {
+  background: rgba(255, 196, 92, 0.18);
+  color: #a96c00;
+}
+
+.sale-status.cancelled {
+  background: rgba(235, 91, 104, 0.12);
+  color: #c3414d;
+}
+
 .middle-row {
   display: flex;
   gap: 16px;
@@ -725,6 +831,10 @@ input {
     flex-wrap: wrap;
   }
 
+  .sales-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .stat-card {
     min-width: 220px;
   }
@@ -753,6 +863,15 @@ input {
     flex-direction: column;
     align-items: flex-start;
     gap: 12px;
+  }
+
+  .sales-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .sales-stats {
+    grid-template-columns: 1fr;
   }
 
   .topbar-tools {
