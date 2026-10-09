@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Panel básico</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <body>
+    <div class="dashboard-shell">
+      <main class="content-area">
+        <header class="topbar-panel">
+          <div class="title-group">
+            <div class="title-logo"><i class="fa-solid fa-chart-simple"></i></div>
+            <h2>Panel básico</h2>
+          </div>
+          <span class="sales-count">Mi negocio · Resumen general</span>
+        </header>
+
+        <section class="sales-view" aria-label="Resumen del negocio">
+          <div class="sales-heading">
+            <div>
+              <h3>¡Bienvenido!</h3>
+              <p>Aquí tienes un resumen sencillo de la actividad de tu negocio.</p>
+            </div>
+            <span class="sales-period"><i class="fa-regular fa-calendar"></i> Octubre 2026</span>
+          </div>
+
+          <div class="stats-row">
+            <article class="stat-card">
+              <div class="stat-icon users"><i class="fa-solid fa-box"></i></div>
+              <div class="stat-copy">
+                <span class="label">Productos</span>
+                <strong>24</strong>
+                <small>En catálogo</small>
+              </div>
+            </article>
+            <article class="stat-card">
+              <div class="stat-icon sessions"><i class="fa-solid fa-bag-shopping"></i></div>
+              <div class="stat-copy">
+                <span class="label">Pedidos</span>
+                <strong>18</strong>
+                <small>Este mes</small>
+              </div>
+            </article>
+            <article class="stat-card">
+              <div class="stat-icon conversion"><i class="fa-solid fa-users"></i></div>
+              <div class="stat-copy">
+                <span class="label">Clientes</span>
+                <strong>12</strong>
+                <small>Registrados</small>
+              </div>
+            </article>
+          </div>
+
+          <div class="sales-table-card panel-card">
+            <div class="head-line">
+              <h3>Pedidos recientes</h3>
+              <span class="sales-count">Últimos pedidos</span>
+            </div>
+            <div class="sales-table-wrap">
+              <table class="sales-table">
+                <thead>
+                  <tr>
+                    <th scope="col">Pedido</th>
+                    <th scope="col">Cliente</th>
+                    <th scope="col">Estado</th>
+                    <th scope="col">Total</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>#0018</td>
+                    <td>Ana Torres</td>
+                    <td><span class="sale-status completed">Entregado</span></td>
+                    <td>$48.00</td>
+                  </tr>
+                  <tr>
+                    <td>#0017</td>
+                    <td>Juan Pérez</td>
+                    <td><span class="sale-status pending">En camino</span></td>
+                    <td>$32.50</td>
+                  </tr>
+                  <tr>
+                    <td>#0016</td>
+                    <td>María López</td>
+                    <td><span class="sale-status completed">Entregado</span></td>
+                    <td>$75.00</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
